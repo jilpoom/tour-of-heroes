@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import {HEROES} from '../mock-heroes';
 import { HeroesComponent } from './heroes.component';
 
 describe('HeroesComponent', () => {

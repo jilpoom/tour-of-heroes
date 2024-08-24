@@ -2,10 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {Hero} from "./hero";
 import {NgFor, NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {HEROES} from "../mock-heroes";
 import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
-import {HeroService} from "../hero.service";
-import {MessageService} from "../message.service";
+import {HeroService} from "../../services/hero.service";
+import {MessageService} from "../../services/message.service";
 
 @Component({
   selector: 'app-heroes',
