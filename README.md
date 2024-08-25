@@ -1,27 +1,8 @@
-# AngularTourOfHeroes
+# Tour of Heroes
+[Angular Tutorial - 히어로들의 여행](https://www.angular.kr/tutorial/tour-of-heroes/toh-pt6) 코드 수행
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 기존 튜토리얼과의 차이점
+1. 호환성 문제로 인해, [`angular-in-memory-web-api`](https://www.npmjs.com/package/angular-in-memory-web-api) 대신 [`json-server`](https://www.npmjs.com/package/json-server)를 사용
+    - 검색(Search) 기능을 제공하지 않아, 일부 기능에 오류가 있을 수 있다.
+2. `NgModule` 대신, `StandAlone Component` 사용
+    - 현재 Angular CLI는 워크스페이스 생성(`ng new`) 시, StandAlone 컴포넌트와 Router를  기본으로 제공한다.
