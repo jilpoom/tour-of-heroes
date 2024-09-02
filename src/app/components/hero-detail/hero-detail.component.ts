@@ -11,7 +11,6 @@ import {HeroService} from "../../services/hero.service";
   imports: [
     UpperCasePipe,
     FormsModule,
-    NgIf
   ],
   templateUrl: './hero-detail.component.html',
   styleUrl: './hero-detail.component.css'

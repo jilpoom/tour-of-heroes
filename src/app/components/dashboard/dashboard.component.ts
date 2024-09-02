@@ -8,7 +8,7 @@ import {HeroSearchComponent} from "../hero-search/hero-search.component";
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [NgFor, RouterLink, HeroSearchComponent],
+  imports: [RouterLink, HeroSearchComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

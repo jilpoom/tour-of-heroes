@@ -10,7 +10,6 @@ import {HeroService} from "../../services/hero.service";
   standalone: true,
   imports: [
     AsyncPipe,
-    NgFor,
     RouterLink
   ],
   templateUrl: './hero-search.component.html',
@@ -38,6 +37,6 @@ export class HeroSearchComponent implements OnInit {
 
       // 검색어가 변경되면 새로운 옵저버블을 생성합니다.
       switchMap((term: string) => this.heroService.searchHeroes(term)),
-    );
+    )
   }
 }
