@@ -10,7 +10,7 @@ import {HeroService} from "../../services/hero.service";
   standalone: true,
   imports: [
     AsyncPipe,
-    RouterLink
+    RouterLink,
   ],
   templateUrl: './hero-search.component.html',
   styleUrl: './hero-search.component.css'

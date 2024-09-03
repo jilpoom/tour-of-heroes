@@ -12,8 +12,6 @@ import {RouterLink} from "@angular/router";
   imports: [
     UpperCasePipe,
     FormsModule,
-    NgFor,
-    NgIf,
     HeroDetailComponent,
     RouterLink
   ],
