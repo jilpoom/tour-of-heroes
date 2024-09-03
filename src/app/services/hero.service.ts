@@ -93,7 +93,8 @@ export class HeroService {
   }
 
   private log(message: string) {
-    this.messageService.add('HeroService: fetched heroes');
+    const id = this.messageService.messages.length + 1
+    this.messageService.add({id, message});
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

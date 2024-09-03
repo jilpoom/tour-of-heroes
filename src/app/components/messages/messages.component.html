@@ -4,8 +4,8 @@
     <button type="button" class="clear" (click)="messageService.clear()">
       Clear messages
     </button>
-    @for (message of messageService.messages; track $index) {
-      <div> {{ message }}</div>
+    @for (message of messageService.messages; track message.id) {
+      <div> {{ message.message }}</div>
     }
   </div>
 }
