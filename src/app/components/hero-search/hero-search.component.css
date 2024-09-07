@@ -1,19 +1,11 @@
 /* HeroSearch 컴포넌트에 적용되는 CSS 스타일 */
 
 label {
-  display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: .5rem;
-
+  @apply block font-bold text-lg mt-4 mb-2;
 }
+
 input {
-  padding: .5rem;
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
-  display: block;
+  @apply p-2 w-full max-w-3xl box-border block border;
 }
 
 input:focus {
@@ -21,27 +13,17 @@ input:focus {
 }
 
 li {
-  list-style-type: none;
+  @apply list-none;
 }
+
 .search-result li a {
-  border-bottom: 1px solid gray;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
-  display: inline-block;
-  width: 100%;
-  max-width: 600px;
-  padding: .5rem;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: black;
+  @apply border-b border-l border-r border-gray-400 inline-block w-full max-w-3xl p-2 box-border no-underline text-black;
 }
 
 .search-result li a:hover {
-  background-color: #435A60;
-  color: white;
+  @apply bg-[#435A60] text-white;
 }
 
 ul.search-result {
-  margin-top: 0;
-  padding-left: 0;
+  @apply mt-0 pl-0;
 }

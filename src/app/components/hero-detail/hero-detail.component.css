@@ -1,24 +1,21 @@
 /* HeroDetailComponent에 적용되는 CSS 스타일 */
+
 label {
-  color: #435960;
-  font-weight: bold;
+  @apply text-[#435960] font-bold;
 }
+
 input {
-  font-size: 1em;
-  padding: .5rem;
+  @apply text-base p-2 border-2;
 }
+
 button {
-  margin-top: 20px;
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 4px;
-  font-size: 1rem;
+  @apply mt-5 bg-gray-200 p-4 rounded text-base;
 }
+
 button:hover {
-  background-color: #cfd8dc;
+  @apply bg-gray-300;
 }
+
 button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
+  @apply bg-gray-200 text-gray-400 cursor-auto;
 }

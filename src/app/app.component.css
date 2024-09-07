@@ -1,21 +1,8 @@
 /* AppComponent에 적용되는 CSS 스타일 */
 h1 {
-  margin-bottom: 0;
-}
-nav a {
-  padding: 1rem;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #e8e8e8;
-  color: #3d3d3d;
-  border-radius: 4px;
+  @apply mb-2 text-2xl font-bold leading-tight;
 }
 
-nav a:hover {
-  color: white;
-  background-color: #42545C;
-}
-nav a:active {
-  background-color: black;
+.router {
+  @apply px-4 py-4 no-underline mt-2 inline-block bg-gray-200 text-gray-700 rounded hover:bg-gray-600 hover:text-white active:bg-black
 }
